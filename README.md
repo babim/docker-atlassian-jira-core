@@ -5,7 +5,7 @@
 
 To quickly get started running a JIRA Core instance, use the following command:
 ```bash
-docker run --detach --publish 8080:8080 babim/jira:fixed
+docker run --detach --publish 8080:8080 babim/jira-core:fixed
 ```
 ```
 volume:
