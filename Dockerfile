@@ -1,6 +1,6 @@
 FROM openjdk:8-alpine
 
-# Configuration variables.
+# Configuration variables
 ENV SOFT		jira
 ENV OPENJDKV		8
 ENV JIRA_VERSION	7.0.10
