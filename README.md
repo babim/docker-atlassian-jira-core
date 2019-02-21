@@ -10,7 +10,7 @@ docker run --detach --publish 8080:8080 babim/jira:latest
 ```
 volume:
 /var/atlassian/jira
-/opt/atlassian/logs
+/opt/atlassian/jira/logs
 ```
 
 Then simply navigate your preferred browser to `http://[dockerhost]:8080` and finish the configuration.
