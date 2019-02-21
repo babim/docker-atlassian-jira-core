@@ -3,7 +3,7 @@ FROM openjdk:8-alpine
 # Configuration variables.
 ENV SOFT		jira
 ENV OPENJDKV		8
-ENV JIRA_VERSION	8.0.0
+ENV JIRA_VERSION	7.0.9
 ENV JIRA_HOME		/var/atlassian/${SOFT}
 ENV JIRA_INSTALL	/opt/atlassian/${SOFT}
 ENV SOFT_HOME		${JIRA_HOME}
