@@ -5,12 +5,12 @@
 
 To quickly get started running a JIRA Core instance, use the following command:
 ```bash
-docker run --detach --publish 8080:8080 babim/jira:latest
+docker run --detach --publish 8080:8080 babim/jira:fixed
 ```
 ```
 volume:
 /var/atlassian/jira
-/opt/atlassian/logs
+/opt/atlassian/jira
 ```
 
 Then simply navigate your preferred browser to `http://[dockerhost]:8080` and finish the configuration.
