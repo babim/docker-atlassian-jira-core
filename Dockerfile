@@ -45,4 +45,4 @@ WORKDIR ${SOFT_HOME}
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 # Run Atlassian as a foreground process by default.
-CMD ["/opt/atlassian/jira/bin/start-jira.sh", "-fg"]
+#CMD ["/opt/atlassian/jira/bin/start-jira.sh", "-fg"]
