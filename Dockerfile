@@ -29,7 +29,7 @@ RUN mkdir -p /etc-start && mv ${SOFT_INSTALL} /etc-start/jira
 # Use the default unprivileged account. This could be considered bad practice
 # on systems where multiple processes end up being executed by 'daemon' but
 # here we only ever run one process anyway.
-USER daemon:daemon
+#USER daemon:daemon
 
 # Expose default HTTP connector port.
 EXPOSE 8080 8443
