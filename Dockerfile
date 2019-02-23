@@ -2,6 +2,7 @@ FROM openjdk:8-alpine
 
 # Configuration variables.
 ENV SOFT		jira
+ENV SOFTSUB		core
 ENV OPENJDKV		8
 ENV JIRA_VERSION	8.0.1
 ENV JIRA_HOME		/var/atlassian/${SOFT}
@@ -24,7 +25,7 @@ RUN wget --no-check-certificate -O - https://raw.githubusercontent.com/babim/doc
 RUN wget --no-check-certificate -O - https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20Atlassian/${SOFT}_install.sh | bash
 
 # prepare visible code
-RUN mkdir -p /etc-start && mv ${SOFT_INSTALL} /etc-start/jira
+RUN mkdir -p /etc-start && mv ${SOFT_INSTALL} /etc-start/${SOFT}
 
 # Use the default unprivileged account. This could be considered bad practice
 # on systems where multiple processes end up being executed by 'daemon' but
