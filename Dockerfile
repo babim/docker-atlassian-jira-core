@@ -1,8 +1,8 @@
-FROM adoptopenjdk/openjdk11:alpine
+FROM adoptopenjdk/openjdk8:alpine
 
 # Configuration variables.
 ENV SOFT		jira
-ENV OPENJDKV		11
+ENV OPENJDKV		8
 ENV JIRA_VERSION	8.8.0
 ENV JIRA_HOME		/var/atlassian/${SOFT}
 ENV JIRA_INSTALL	/opt/atlassian/${SOFT}
